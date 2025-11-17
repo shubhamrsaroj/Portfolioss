@@ -13,6 +13,7 @@ async function sendTelegramMessage(token, chat_id, message) {
   } catch (error) {
     console.error('Error sending Telegram message:', error.response?.data || error.message);
     return false;
+    
   }
 };
 
