@@ -70,3 +70,33 @@ Aspiring Full-Stack Developer skilled in **React.js, Node.js, Express.js, MongoD
   - CGPA: 7.5
 - **BSc Computer Science** — Pillai College of Arts, Commerce & Science (2018–2021)
   - CGPA: 7.2
+
+---
+
+## Environment Variables Configuration
+In the `.env` file, configure only the following for Telegram-based notifications (Gmail removal):
+```env
+# Telegram Bot Configuration
+TELEGRAM_BOT_TOKEN=your_bot_token_here
+TELEGRAM_CHAT_ID=your_chat_id_here
+```
+
+> **Note:** Contact form now uses only Telegram notifications. No Gmail configuration is needed, making it deploy-friendly for Vercel.
+
+---
+
+## How to set up Telegram notifications
+1. Open Telegram and search for `@BotFather`
+2. Send `/newbot` command
+3. Set bot name/username (must end with `bot`), copy the bot token
+4. Message your bot
+5. Get Chat ID from: `https://api.telegram.org/bot<BOT_TOKEN>/getUpdates`
+6. Add to `.env` file using instructions above.
+
+---
+
+## Troubleshooting
+- Make sure you correctly configure your **Telegram Bot Token** and **Chat ID** in `.env`.
+- If notifications aren't received, verify your bot and chat ID using the Telegram API.
+
+---
