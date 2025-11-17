@@ -1,7 +1,15 @@
+
+"use client";
+
 import { projectsData } from '@/utils/data/projects-data';
 import ProjectCard from './project-card';
+import { useState } from 'react';
 
 const Projects = () => {
+  const [openDemo, setOpenDemo] = useState(null);
+
+  const handleOpenDemo = (demoUrl) => setOpenDemo(demoUrl);
+  const handleCloseDemo = () => setOpenDemo(null);
 
   return (
     <div id='projects' className="relative z-50  my-12 lg:my-24">
@@ -17,19 +25,39 @@ const Projects = () => {
 
       <div className="pt-24">
         <div className="flex flex-col gap-6">
-          {projectsData.slice(0, 4).map((project, index) => (
+          {projectsData.slice(0, 5).map((project, index) => (
             <div
               id={`sticky-card-${index + 1}`}
               key={index}
               className="sticky-card w-full mx-auto max-w-2xl sticky"
             >
               <div className="box-border flex items-center justify-center rounded shadow-[0_0_30px_0_rgba(0,0,0,0.3)] transition-all duration-[0.5s]">
-                <ProjectCard project={project} />
+                <ProjectCard project={project} onDemoClick={() => handleOpenDemo(project.demo)} />
               </div>
             </div>
           ))}
         </div>
       </div>
+
+      {/* Modal demo window overlay */}
+      {openDemo && (
+        <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black bg-opacity-80">
+          <div className="relative w-[90vw] max-w-4xl h-[80vh] bg-gray-900 rounded-lg shadow-lg flex flex-col">
+            <button
+              onClick={handleCloseDemo}
+              className="absolute right-4 top-2 text-white text-xl font-bold px-3 py-1 bg-pink-600 rounded hover:bg-pink-400 transition shadow-md z-10"
+            >
+              &times;
+            </button>
+            <iframe
+              src={openDemo}
+              title="Demo"
+              className="flex-1 w-full h-full rounded-b-lg border-none"
+              allowFullScreen
+            />
+          </div>
+        </div>
+      )}
     </div>
   );
 };

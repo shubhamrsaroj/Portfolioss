@@ -1,52 +1,88 @@
 export const projectsData = [
     {
-        id: 1,
-        name: 'AI Powered Financial App',
-        description: "Me and my team built an AI-powered financial mobile application. I have developed API using Express, Typescript, OpenAI, AWS, and MongoDB. Used OTP via AWS SES, Google, and Facebook for the authentication system. Built AI assistants using OpenAI's latest model and trained using our dataset. Voice messages are converted to text using AWS Transcribe. The app fetches data from Google Sheets and generates a PDF term sheet, sent via AWS SES.",
-        tools: ['Express', 'MongoDB', 'OpenAI API', 'AWS SES', 'AWS S3', 'Node Mailer', 'Joi', 'Puppeteer', 'EC2', 'PM2', 'Nginx'],
-        role: 'Backend Developer',
-        code: '',
-        demo: '',
+      id: 1,
+      name: 'Task Manager Pro',
+      description:
+        'A full-featured task management system with role-based access, JWT authentication, task assignment, analytics dashboard, real-time Socket.io notifications, CRUD operations, and dark mode UI.',
+      tools: [
+        'React.js',
+        'Node.js',
+        'Express.js',
+        'MongoDB',
+        'Socket.io',
+        'JWT',
+        'Tailwind CSS',
+        'Chart.js'
+      ],
+      role: 'Full Stack Developer',
+      code: 'https://github.com/shubhamrsaroj/TaskManager',
+      demo:
+        'https://drive.google.com/file/d/1RfvsyAIGwiTsZI8SGkt0_-OIkOXqNXmP/view?usp=sharing'
     },
     {
-        id: 2,
-        name: 'Travel Agency App',
-        description: 'I have designed and developed a full-stack web app for 2Expedition, a travel agency in Armenia. I created the UI using NextJS, Typescript, MUI, TailwindCSS, Google Maps, Sun-Editor, and React Slick. The app supports multiple languages and currencies. I developed the API using NestJS, Typescript, MySQL, TypeORM, AWS, and Nodemailer. I deployed the front-end app to AWS Amplify and the back-end app to AWS EC2.',
-        tools: ['NextJS', 'Tailwind CSS', "Google Maps", "NestJS", "TypeScript", "MySQL", "AWS S3", "Sun-Editor", "Gmail Passkey"],
-        role: 'Full Stack Developer',
-        code: '',
-        demo: '',
+      id: 2,
+      name: 'VibeCoder – AI Developer Platform',
+      description:
+        'AI-powered developer platform featuring Spotify-integrated music, UI-to-code generation, and a smart code editor with autocomplete. Includes theme customization, secure login, and a modern dashboard.',
+      tools: [
+        'React.js',
+        'Node.js',
+        'MongoDB',
+        'Material UI',
+        'Spotify API',
+        'OpenAI API'
+      ],
+      role: 'Full Stack Developer',
+      code: 'https://github.com/shubhamrsaroj/VibesCoder',
+      demo: 'https://peppy-snickerdoodle-ccc36f.netlify.app/'
     },
     {
-        id: 3,
-        name: 'AI Powered Real Estate',
-        description: 'My team built an AI-based real estate app using Replicate API and OpenAI. We used Express, Typescript, OpenAI, Replicate, Stripe, and Mongoose to develop the API. We utilized NextJS, Formik, TailwindCSS, and other npm libraries for the UI. We have trained multiple AI assistants using the latest GPT model and integrated Replicate API for image processing. We added role-based auth, subscription plans, Cron job scheduling, and payment integration with Stripe.',
-        tools: ['React', 'Bootstrap', 'SCSS', 'Stripe', 'Express', 'TypeScript', 'MongoDB', 'Azure Blob', 'OpenAI API', 'Replicate AI', 'Cronjob', 'JWT'],
-        code: '',
-        role: 'Full Stack Developer',
-        demo: '',
+      id: 3,
+      name: 'AI Music Video Generator',
+      description:
+        'Generated AI-based music and videos using FastAPI, PyTorch, MusicGen, FFmpeg, and Google Generative AI. Implemented GPU-based acceleration, noise reduction, and automatic video rendering. Frontend built with React + Tailwind.',
+      tools: [
+        'FastAPI',
+        'PyTorch',
+        'MusicGen',
+        'MongoDB',
+        'React.js',
+        'Tailwind CSS',
+        'FFmpeg',
+        'Google GenAI'
+      ],
+      role: 'Full Stack Developer',
+      code: '',
+      demo:
+        'https://drive.google.com/file/d/1nW9pUQxkqE_9nPHBy6TSvTL6y7x5mjzu/view?usp=sharing'
     },
     {
-        id: 4,
-        name: 'Newsroom Management',
-        description: "My team and I developed a newspaper management dashboard application called Newsroom Management. As a front-end developer, I worked on creating the dashboard using NextJS, Material UI, Redux, Calendar, and other necessary npm libraries. We used React Redux to manage the application's state and React-hook-form and Sun Editor to handle forms.",
-        tools: ['NextJS', 'Material UI', 'Redux', 'Sun Editor', "Calendar"],
-        code: '',
-        demo: '',
-        role: 'Full Stack Developer',
-    }
-];
-
-
-// Do not remove any property.
-// Leave it blank instead as shown below
-
-// {
-//     id: 1,
-//     name: '',
-//     description: "",
-//     tools: [],
-//     role: '',
-//     code: '',
-//     demo: '',
-// },
+      id: 4,
+      name: 'Dice Game',
+      description:
+        'A fun interactive dice game featuring real-time scoring logic, animations, and a simple intuitive UI. Built using React.js and Node.js backend APIs.',
+      tools: ['React.js', 'Node.js', 'CSS'],
+      role: 'Frontend Developer',
+      code: '',
+      demo: 'https://dice-game-orpin-six.vercel.app/'
+    },
+       {
+          id: 5,
+          name: 'ECharge – EV Charging Station Network',
+          description:
+            'A platform to locate and manage EV charging stations. Users can add new stations, see existing ones on the interactive map, and get real-time availability details. Built with React, Node.js, Express, and MongoDB.',
+          tools: [
+            'React.js',
+            'Node.js',
+            'Express.js',
+            'MongoDB',
+            'Google Maps API',
+            'REST API'
+          ],
+          role: 'Full Stack Developer',
+          code: 'https://github.com/shubhamrsaroj/ECharge',
+          demo: 'https://e-charge-api.netlify.app/' 
+        }
+      ];
+      
+  
