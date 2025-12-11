@@ -17,7 +17,7 @@ export const projectsData = [
       role: 'Full Stack Developer',
       code: 'https://github.com/shubhamrsaroj/TaskManager',
       demo:
-        'https://drive.google.com/file/d/1RfvsyAIGwiTsZI8SGkt0_-OIkOXqNXmP/view?usp=sharing'
+        'https://drive.google.com/file/d/1Q0EIP385Kp54rnBZGqkQKvWnFwDdzz83/view?usp=sharing'
     },
     {
       id: 2,
@@ -34,7 +34,7 @@ export const projectsData = [
       ],
       role: 'Full Stack Developer',
       code: 'https://github.com/shubhamrsaroj/VibesCoder',
-      demo: 'https://peppy-snickerdoodle-ccc36f.netlify.app/'
+      demo: 'https://peppy-snickerdoodle-ccc36f.netlify.app/',
     },
     {
       id: 3,
@@ -54,7 +54,7 @@ export const projectsData = [
       role: 'Full Stack Developer',
       code: '',
       demo:
-        'https://drive.google.com/file/d/1nW9pUQxkqE_9nPHBy6TSvTL6y7x5mjzu/view?usp=sharing'
+        'https://drive.google.com/file/d/1LA3i5AmYHtUGoJFWtLjP3vNZnV5nGS0z/view?usp=sharing'
     },
     {
       id: 4,
