@@ -7,6 +7,7 @@ import HeroSection from "./components/homepage/hero-section";
 import Projects from "./components/homepage/projects";
 import Skills from "./components/homepage/skills";
 
+
 async function getData() {
   const res = await fetch(`https://dev.to/api/articles?username=${personalData.devUsername}`)
 
@@ -16,8 +17,8 @@ async function getData() {
 
   const data = await res.json();
 
-  const filtered = data.filter((item) => item?.cover_image).sort(() => Math.random() - 0.5);
-
+  // Only filter, do not shuffle on server
+  const filtered = data.filter((item) => item?.cover_image);
   return filtered;
 };
 
@@ -25,7 +26,7 @@ export default async function Home() {
   const blogs = await getData();
 
   return (
-    <div suppressHydrationWarning >
+    <div suppressHydrationWarning>
       <HeroSection />
       <AboutSection />
       <Experience />
@@ -34,5 +35,5 @@ export default async function Home() {
       <Education />
       <ContactSection />
     </div>
-  )
+  );
 };
